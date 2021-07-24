@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>calcolo del prezzo del biglietto del treno con form</title>
+</head>
+<body>
+    <header>
+        <h1>CALCOLA IL PREZZO DEL TUO BIGLIETTO</h1>
+    </header>
+    <main>
+        <div id="calcolo" class="container">
+<!-- INSERIMENTO DATI -->
+            <div class="row D-flex">
+                <div>
+                    <label for="nome"> Nome e Cognome</label>
+                    <input id="nome" type="text" size="25" placeholder="Inserisci il tuo nome e cognome">
+                </div>
+                <div>
+                    <label for="numero"> km da percorrere</label>
+                    <input id="numero" type="number" placeholder="Inserisci il numero di km">
+                </div>
+                
+                <div>
+                    <label for="fasciaEta">Fascia eta</label>
+                    <select name="" id="fasciaEta">
+                        <option value="">--</option>
+                        <option value="minorenne">Minorenne</option>
+                        <option value="maggiorenne">Maggiorenne</option>
+                        <option value="over65">Over 65</option>
+                    </select>
+                </div>
+            </div>
+<!-- FINE -->
+<!-- BOTTONI GENERA/ANNULLA -->
+            <div class="row">
+                <button id="genera">Genera</button>
+                <button>Annulla</button>
+            </div>
+        </div>
+<!-- FINE -->
+<!-- BIGLIETTO GENERATO -->
+        <div>
+            <h2>IL TUO BIGLIETTO</h2>
+            <div class="containerBiglietto">
+                <div class="biglietto-top">
+                    <h3></h3>
+                </div>
+                <div class="biglietto-bottom">
+                    <div class="biglietto-bottom-left">
+                        <h3></h3>
+                        <p id="nome"></p>
+                    </div>
+                    <div class="biglietto-bottom-right">
+                        <h3></h3>
+                        
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </main>
+<!-- FINE -->
+    <script src="js/main.js"></script>
+</body>
+</html>
